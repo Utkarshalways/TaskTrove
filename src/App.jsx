@@ -77,11 +77,10 @@ function App() {
           {/* this div will contain all the todos inside it , it will apply loop to iterate all the todos */}
           {
             todos.map((todo)=>{
-              return <>
-                <div key={todo.id}>
+              return  <div key = { todo.id }>
                   <Todos todo={todo}/>
                 </div>
-              </>
+              
             })
           }
         </div>

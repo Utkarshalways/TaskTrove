@@ -6,11 +6,6 @@ const Todos = ({todo}) => {
   const [todomsg, setTodomsg] = useState(todo.todo);
   const {deleteTodo, updateTodo,togglecomplete} = useTodo();
 
-  // togglecomplete = () => {
-
-
-  // }
-
   const edit = ()=> {
     updateTodo(todo.id,{...todo,todo:todomsg})
     setEditable(false);
@@ -25,16 +20,19 @@ const Todos = ({todo}) => {
   return (
     <div
       className={
-        "  w-full flex justify-center gap-6 p-4  rounded-lg  " +
+        "  w-full flex justify-center gap-6 p-4  rounded-lg " +
         (todo.complete ? "bg-green-500 " : "bg-slate-600")
       }
     >
+      {console.log(todo.complete)}
       <input
         type="checkbox"
         className=" p-20 "
         value={todo.complete}
         onChange={togglecompleted}
+        checked={todo.complete}
       />
+      {console.log(todo.complete)}
       <input
         type="text"
         className={
