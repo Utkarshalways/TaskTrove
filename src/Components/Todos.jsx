@@ -20,7 +20,7 @@ const Todos = ({todo}) => {
   return (
     <div
       className={
-        "  w-full flex justify-center gap-6 p-4  rounded-lg " +
+        "  w-full flex justify-center gap-1 p-4  rounded-lg  sm:gap-6 " +
         (todo.complete ? "bg-green-500 " : "bg-slate-600")
       }
     >
@@ -36,7 +36,7 @@ const Todos = ({todo}) => {
       <input
         type="text"
         className={
-          " w-2/3  placeholder:text-center rounded-lg  " +
+          " w-2/3  placeholder:text-center rounded-lg p-4  sm:w-full sm:p-2 " +
           (todo.complete ? " line-through " : "")
         }
         value={todomsg}
@@ -60,7 +60,7 @@ const Todos = ({todo}) => {
         className=" border-2 bg-blue-400 p-2 rounded-lg hover:bg-blue-500 text-white "
         onClick={() => deleteTodo(todo.id)}
       >
-        Delete
+        <span class="material-symbols-outlined text-black">delete</span>
       </button>
     </div>
   );
