@@ -19,6 +19,19 @@
         padding: 0.7rem;
         background-color: $boxcolor3;
         color: $white;
+        display: flex;
+        text-transform: capitalize;
+        // text-align: center;
+        // justify-content: center;
+        
+    }
+    
+    .todotextmodification{
+        
+        vertical-align: center;
+        text-decoration: line-through;
+        text-transform: lowercase;
+        // text-align: left;
 
     }
 

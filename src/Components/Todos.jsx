@@ -36,7 +36,7 @@ const Todos = ({todo}) => {
         type="text"
         className={
           "todotext" +
-          (todo.complete ? " line-through " : "")
+          (todo.complete ? " todotextmodification " : "")
         }
         value={todomsg}
         readOnly={!Editable}
@@ -45,6 +45,8 @@ const Todos = ({todo}) => {
 
       <button
         className="Editbtn"
+        // disabled={todo.complete}
+      // this is to disable the button while the task or todo is completed
         onClick={(e) => {
           setEditable(!Editable);
         }}
@@ -58,6 +60,9 @@ const Todos = ({todo}) => {
       <button
         className="deletebtn"
         onClick={() => deleteTodo(todo.id)}
+      // disabled={todo.complete} 
+
+      // this is to disable the button while the task or todo is completed
       >
         <span class="material-symbols-outlined ">delete</span>
       </button>
