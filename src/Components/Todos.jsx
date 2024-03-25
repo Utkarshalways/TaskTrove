@@ -44,22 +44,22 @@ const Todos = ({todo}) => {
       />
 
       <button
-        className=" border-2 bg-blue-400 p-2 rounded-lg hover:bg-blue-500 text-white"
+        className="Editbtn"
         onClick={(e) => {
           setEditable(!Editable);
         }}
       >
         {!Editable ? (
-          <span className="material-symbols-outlined text-black ">edit</span>
+          <span className="material-symbols-outlined  editbtn ">edit</span>
         ) : (
-          <span className="material-symbols-outlined text-black ">save</span>
+          <span className="material-symbols-outlined  savebtn ">save</span>
         )}
       </button>
       <button
-        className=" border-2 bg-blue-400 p-2 rounded-lg hover:bg-blue-500 text-white "
+        className="deletebtn"
         onClick={() => deleteTodo(todo.id)}
       >
-        <span class="material-symbols-outlined text-black">delete</span>
+        <span class="material-symbols-outlined ">delete</span>
       </button>
     </div>
   );

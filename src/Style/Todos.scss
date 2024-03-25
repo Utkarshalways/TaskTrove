@@ -22,8 +22,46 @@
 
     }
 
-    
-}
+    .Editbtn{
+        
+        span {
+        border: none;
+        padding: 0.5rem;
+        border-radius: 0.8rem;
+        background-color: $btncolor;
+        // color: white;
+
+        &:hover{
+            background-color: $btncolorhover;
+        }
+
+        }
+
+        }
+
+        .deletebtn{
+
+             span {
+        border: none;
+        padding: 0.5rem;
+        border-radius: 0.8rem;
+        background-color: $btncolor;
+        // color: white;
+
+        &:hover{
+            background-color: $btncolorhover;
+        }
+
+        }
+
+        }
+
+        
+
+
+    }
+
+
 
 .todoComplete{
 
