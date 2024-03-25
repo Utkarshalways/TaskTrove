@@ -6,3 +6,8 @@ $bordercolor:#FFBA08;
 $other:#D00000;
 
 
+@mixin flex(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
