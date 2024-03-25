@@ -28,7 +28,15 @@
 .todoComplete{
 
         background-color: $boxcolor3complete !important;
+
+        .todotext{
+
+            background-color: $boxcolor3complete;
+        }
+
     }
     .todonotComplete{
+
      background-color: $boxcolor3 !important;
+
     }
