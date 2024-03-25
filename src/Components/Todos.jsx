@@ -21,14 +21,12 @@ const Todos = ({todo}) => {
   return (
     <div
       className={
-        "  w-full flex justify-center gap-1 p-4  rounded-lg  sm:gap-6 " +
-        (todo.complete ? "bg-green-500 " : "bg-slate-600")
+        "todobase " + (todo.complete? "todoComplete" : "todonotComplete")
       }
     >
       {console.log(todo.complete)}
       <input
         type="checkbox"
-        className=" p-20 "
         value={todo.complete}
         onChange={togglecompleted}
         checked={todo.complete}
@@ -37,7 +35,7 @@ const Todos = ({todo}) => {
       <input
         type="text"
         className={
-          " w-2/3  placeholder:text-center rounded-lg p-4  sm:w-full sm:p-2 " +
+          "todotext" +
           (todo.complete ? " line-through " : "")
         }
         value={todomsg}

@@ -12,6 +12,10 @@ $black : #000;
 $boxcolor2:#2EBFA5;
 $boxcolorcompleted: #78FECF;
 
+
+$boxcolor3:#216869;
+$boxcolor3complete:#49A078;
+
 @mixin flex(){
     display: flex;
     justify-content: center;
