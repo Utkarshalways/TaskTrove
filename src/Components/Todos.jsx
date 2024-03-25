@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useTodo } from '../context';
+import "../Style/Todos.scss";
 
 const Todos = ({todo}) => {
   const [Editable, setEditable] = useState(false);

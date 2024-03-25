@@ -1,10 +1,16 @@
 $bgcolor :#032B43;
-$btncolor : #3F88C5;
-$btncolorhover : #225D8D;
+$bgcolor2 :#AF3B6E;
+$btncolor : #60A5FA;
+$btncolorhover : #3B82F6;
 $boxcolor:#136F63;
+// $boxcolor:#059669;
 $bordercolor:#FFBA08;
 $other:#D00000;
+$white:#fff;
+$black : #000;
 
+$boxcolor2:#2EBFA5;
+$boxcolorcompleted: #78FECF;
 
 @mixin flex(){
     display: flex;
