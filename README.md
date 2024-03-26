@@ -1,4 +1,4 @@
-# Todo List React App
+# Task Trove
 
 ## Overview
 This is a simple todo list app built using React. It allows users to add, remove, and mark tasks as completed.
