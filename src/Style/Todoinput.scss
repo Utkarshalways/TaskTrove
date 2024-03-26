@@ -37,3 +37,58 @@
     }
 
 }
+
+@media screen and (max-width: 475px){
+
+    .todoinputbase{
+
+        // border: 2px solid red;
+        gap: 1rem;
+
+        >input{
+            width: 70%;
+            padding: 0.5rem;
+
+           &::placeholder{
+            font-size: 0.9rem;
+           }
+
+        }
+
+
+        .addbutton{
+            padding: 0.3rem;
+            margin: 0.1rem;
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 390px){
+
+    .todoinputbase{
+
+        // border: 2px solid red;
+        gap: 0.8rem;
+
+        >input{
+            width: 75%;
+            padding: 0.5rem;
+
+            &::placeholder{
+
+                font-size: 0.8rem;
+            }
+
+        }
+
+
+        .addbutton{
+            padding: 0.3rem;
+            margin: 0.1rem;
+            
+        }
+    }
+
+}
