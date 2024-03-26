@@ -17,6 +17,8 @@ const Todoinput = () => {
     if(todo.length > 0){
       // console.log(todo)
       addTodo({todo,complete:false});
+    }else{
+      alert("Please Enter the task in Todo!!")
     }
     setTodo("")
 
