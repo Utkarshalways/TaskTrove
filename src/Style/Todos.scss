@@ -21,6 +21,7 @@
         color: $white;
         display: flex;
         text-transform: capitalize;
+        border: none;
         // text-align: center;
         // justify-content: center;
         
@@ -39,8 +40,11 @@
     }
 
     .Editbtn{
-        
+         border-radius: 0.8rem;
+         border: none;
         span {
+        // width: 100%;
+        // height: 100%;
         border: none;
         padding: 0.5rem;
         border-radius: 0.8rem;
@@ -56,7 +60,8 @@
         }
 
         .deletebtn{
-
+            border-radius: 0.8rem;
+         border: none;
              span {
         border: none;
         padding: 0.5rem;
@@ -92,5 +97,106 @@
     .todonotComplete{
 
      background-color: $boxcolor3 !important;
+
+    }
+
+
+    @media  screen and (max-width:475px) {
+
+
+        .todobase{
+
+            gap:0.5rem;
+            padding: 0.8rem;
+
+            .todotext{
+
+                width: 75%;
+                font-size: 0.8rem;
+                
+
+
+            }
+
+            .Editbtn{
+                // @include flex;
+                // background-color: $boxcolor3;
+                
+                    span{
+                        
+                        // width: 2.2rem;
+                        @include flex;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 18px;
+                        font-weight: 600;
+                        
+                    }
+            }
+
+            .deletebtn{
+
+                span{
+                        
+                        // width: 2.2rem;
+                        @include flex;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+
+            }
+        }
+
+        
+    }
+
+
+    @media screen and (max-width: 390px){
+        
+        
+        .todobase{
+
+            gap:0.2rem;
+            padding: 0.8rem;
+
+            .todotext{
+
+                width: 85%;
+                font-size: 0.7rem;
+
+            }
+
+            .Editbtn{
+               
+                
+                    span{
+                        
+                        // width: 2.2rem;
+                        @include flex;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 13px;
+                        font-weight:700; 
+                        
+                    }
+            }
+
+            .deletebtn{
+
+                span{
+                        
+                        // width: 2.2rem;
+                        @include flex;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 13px;
+                        font-weight:700; 
+                        
+                    }
+
+            }
+        }
 
     }

@@ -28,6 +28,7 @@
         padding: 0.5rem;
         @include flex;
         border-radius: 0.8rem;
+        border: none;
         // box-shadow: 1px 1px 4px $black;
 
         &:hover{
@@ -87,7 +88,7 @@
         .addbutton{
             padding: 0.3rem;
             margin: 0.1rem;
-            
+            border: none;
         }
     }
 
