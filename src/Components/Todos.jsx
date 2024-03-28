@@ -7,7 +7,7 @@ const Todos = ({todo}) => {
   const [todomsg, setTodomsg] = useState(todo.todo);
   const {deleteTodo, updateTodo,togglecomplete} = useTodo();
 
-  const edit = ()=> {
+  const edit = () => {
     updateTodo(todo.id,{...todo,todo:todomsg})
     setEditable(false);
   }
@@ -24,14 +24,14 @@ const Todos = ({todo}) => {
         "todobase " + (todo.complete? "todoComplete" : "todonotComplete")
       }
     >
-      {console.log(todo.complete)}
+      {/* {console.log(todo.complete)} */}
       <input
         type="checkbox"
         value={todo.complete}
         onChange={togglecompleted}
         checked={todo.complete}
       />
-      {console.log(todo.complete)}
+      {/* {console.log(todo.complete)} */}
       <input
         type="text"
         className={
@@ -40,16 +40,30 @@ const Todos = ({todo}) => {
         }
         value={todomsg}
         readOnly={!Editable}
-        onChange={(e) => setTodomsg(e.target.value)}
+        onChange={(e) =>{
+
+         setTodomsg(e.target.value)
+              
+        }}
       />
 
       <button
         className="Editbtn"
         // disabled={todo.complete}
       // this is to disable the button while the task or todo is completed
-        onClick={(e) => {
-          setEditable(!Editable);
+        onClick={() => {
+
+          if(todo.complete) return;
+
+          if(Editable){
+            edit();
+          }else{
+
+          setEditable((Editable)=>!Editable);
+          }
+          
         }}
+        
       >
         {!Editable ? (
           <span className="material-symbols-outlined  editbtn ">edit</span>

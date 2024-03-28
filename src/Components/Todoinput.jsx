@@ -15,6 +15,7 @@ const Todoinput = () => {
 
     //this function will add the todo
     if(todo.length > 0){
+      
       // console.log(todo)
       addTodo({todo,complete:false});
     }else{

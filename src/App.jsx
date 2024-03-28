@@ -20,15 +20,8 @@ function App() {
   const updateTodo = (id ,todo) =>{
 
     setTodos((previous) => {
-      previous.map((eachtodo) => {
-        if(eachtodo.id === id){
-          todo
-        }
-        else{
-          eachtodo
-        }
-      })
-    })
+       return previous.map((eachtodo) => eachtodo.id === id ? todo : eachtodo )
+      });
   }
 
 
